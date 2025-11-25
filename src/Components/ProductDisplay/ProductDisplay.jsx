@@ -20,7 +20,7 @@ const ProductDisplay = (props) => {
       </div>
       <div className="productdisplay-right">
         <h1>{product.name}</h1>
-        <div className="productdisplay-right-star">
+        <div className="productdisplay-right-stars">
           <img src={star_icon} alt="" />
           <img src={star_icon} alt="" />
           <img src={star_icon} alt="" />
@@ -28,12 +28,13 @@ const ProductDisplay = (props) => {
           <img src={star_dull_icon} alt="" />
           <p>(122)</p>
         </div>
-        <div className="productdisplay-right-prices"></div>
-        <div className="productdisplay-right-price-old">
-          ${product.old_price}
-        </div>
-        <div className="productdisplay-right-price-new">
-          ${product.new_price}
+        <div className="productdisplay-right-prices">
+          <div className="productdisplay-right-price-old">
+            ${product.old_price}
+          </div>
+          <div className="productdisplay-right-price-new">
+            ${product.new_price}
+          </div>
         </div>
         <div className="productdisplay-right-description">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
@@ -49,11 +50,14 @@ const ProductDisplay = (props) => {
             <div>XL</div>
             <div>XXl</div>
           </div>
-          <button>ADD TO CART</button>
-          <p className="productdisplay-right-category">
-            <span>Category:</span>
-          </p>
         </div>
+        <button>ADD TO CART</button>
+        <p className="productdisplay-right-category">
+          <span>Category:</span> Women, T-Shirt, Crop-Top
+        </p>
+        <p className="productdisplay-right-category">
+          <span>Tags:</span> Modern, Latest, Crop-Top
+        </p>
       </div>
     </div>
   );
